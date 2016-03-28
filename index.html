@@ -54,7 +54,7 @@
 					src="{{photo.images}}">
 
 					<br><br>
-						<li ng-repeat="comment in photo.comments.data">@{{comment.from.name}}: {{comment.message}}</li>
+						<li id="{{comment.id}}" ng-repeat="comment in photo.comments.data">@{{comment.from.name}}: {{comment.message}}</li>
 					<p>***********************************************************</p>
 					<br><br><br>
 				</div>
