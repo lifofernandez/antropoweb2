@@ -1,0 +1,65 @@
+<!doctype html>
+<html ng-app="App" >
+	<head>
+		<meta charset="utf-8">
+		<title>Antropofonica</title>
+		<style type="text/css">
+			body{
+				font-family: monospace;
+				padding-top: 85px;
+			}
+			.header {
+				top: 0;
+				left: 0;
+				position: fixed;
+				width: 100%;
+				background: white;
+				/*opacity: .8;*/
+				padding: 0 10px 10px;
+			}
+			#info{float: left;}
+			#social{float: right;}
+
+			.photo{
+				text-align: center;
+			}
+
+		</style>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js">
+		</script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<div class="header">
+		<h1 id="home"><a href='/'>Antropof&oacute;nica</a></h1>
+		<div id="info">	
+			<strong>DISCO:</strong> <a href="http://www.antropofonica.com.ar/video">VER VIDEO</a> | Bajar Audio: <a href="http://www.antropofonica.com.ar/disco/A-mp3.tar.gz">MP3</a> - <a href="http://www.antropofonica.com.ar/disco/A-wav.tar.gz">WAV</a>
+		</div>
+
+		<div id="social">
+			<a href="mailto:antropofonica@gmail.com">antropofonica@gmail.com</a> | 
+			<a href="/antropofonica-presskit2015.zip">presskit</a> | 
+            <a target="_blank" href="http://antropofonica.bandcamp.com/">bandcamp</a> | 
+            <a target="_blank" href="https://www.facebook.com/antropofonica">facebook</a>
+		</div>
+		</div>
+
+		<div ng-controller="FlyersCtrl">
+
+				<div ng-repeat="photo in photos  | orderBy:'-created_time'" class="photo">
+					<pre>{{photo.name}}</pre>
+					<img ng-style="{maxHeight: iframeHeight + 'px'}"
+					id="fbImgId-{{photo.id}}"
+					src="{{photo.images}}">
+
+					<br><br>
+						<li ng-repeat="comment in photo.comments.data">@{{comment.from.name}}: {{comment.message}}</li>
+					<p>***********************************************************</p>
+					<br><br><br>
+				</div>
+
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+{
+    "events": {
+        "data": [
+            {
+                "description": "▣◊▣◊▣◊▣◊▣◊▣◊▣◊▣◊▣\n\nNoche fina en Palermo.\n\nNos juntamos con las chicas de Bourbon Sweethearts para transformar tu copa de vino en un jeep todoterreno que te mueva en tiempo y en espacio.\n\nGlamour y energía en el viernes de El Universal espacio cultural.\n\nantropofonica.bandcamp.com\nbourbonsweethearts.bandcamp.com\n\n▣◊▣◊▣◊▣◊▣◊▣◊▣◊▣◊▣",
+                "name": "▨▧◈▨▧ Antropofónica + Bourbon Sweethearts ▨▧◈▨▧ en El Universal",
+                "place": {
+                    "name": "El Universal espacio cultural",
+                    "location": {
+                        "city": "Buenos Aires",
+                        "country": "Argentina",
+                        "latitude": -34.5895271,
+                        "longitude": -58.4301987,
+                        "street": "Soria 4940",
+                        "zip": "C1414BLB"
+                    },
+                    "id": "591631050908041"
+                },
+                "start_time": "2016-04-08T21:00:00-0300",
+                "id": "1154706894561425"
+            }
+        ],
+        "paging": {
+            "cursors": {
+                "before": "MTE1NDcwNjg5NDU2MTQyNQZDZD",
+                "after": "MTE1NDcwNjg5NDU2MTQyNQZDZD"
+            },
+            "next": "https://graph.facebook.com/v2.5/151291101552571/events?access_token=1651798548476449%7Cf22MA17imNptt83r5Gv6xVV8Hfs&limit=1&after=MTE1NDcwNjg5NDU2MTQyNQZDZD"
+        }
+    },
+    "id": "151291101552571"
+}
