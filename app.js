@@ -7,6 +7,7 @@ App.controller('FlyersCtrl', function($scope, $http) {
   $http.get('photos.json')
 	.then(function(res){
 		angular.forEach(res.data.photos.data, function(value, key) {
+			console.log(value.images[0]);
 			value.images = value.images[0].source;
 		});
 		$scope.photos = res.data.photos.data;
