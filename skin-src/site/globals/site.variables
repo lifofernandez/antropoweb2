@@ -1,0 +1,10 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@fontName          : 'Inconsolata';
+@fontSmoothing     : antialiased;
+
+@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@googleFontSizes   : '400';
