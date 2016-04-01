@@ -18,6 +18,7 @@ use Data::Dumper;
 use JSON;
 # use Data::Compare;
 
+my $folder = 'public/';
 
 # URL Strings
 my $host = 'https://graph.facebook.com/';
@@ -25,7 +26,7 @@ my $host = 'https://graph.facebook.com/';
 my $query_albums = '699227143425628/?fields=photos{created_time,name,images{source},comments}';
 my $query_event = 'antropofonica/?fields=events.limit(1)';
 
-my $access_token = '&access_token=*****';
+my $access_token = '&access_token=1651798548476449|c838d5beaf40aa0d7bae4f7edc4b09af';
 
 
 my $url_albums = $host.$query_albums.$access_token;
@@ -65,8 +66,8 @@ sub grabJson{
 			}
 
 			#load to compare
-			open(my $fh, '<:encoding(UTF-8)', $filename)
-				or die "Could not open file '$filename' $!";
+			open(my $fh, '<:encoding(UTF-8)', $folder.$filename)
+				or die "Could not open file '$folder$filename' $!";
 
 			my $fh_st;
 			while (my $row = <$fh>) {
@@ -75,14 +76,14 @@ sub grabJson{
 			}
 			close $fh;
 
-			# compare and write
+			# !compare then write
 			unless($fh_st eq $res->content){
-				open(my $fh, '>', $filename);
+				open(my $fh, '>', $folder.$filename);
 				print $fh $res->content;
 				close $fh;
-				say "-> Escribí: $filename. <-\n";
+				say "-> Escribí: $folder$filename. <-\n";
 			}else{
-				say "<- Nada nuevo en: $filename. ->\n";
+				say "<- Nada nuevo en: $folder$filename. ->\n";
 			}
 
 		}else{
