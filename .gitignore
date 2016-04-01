@@ -3,3 +3,4 @@ Semantic-UI/dist
 Semantic-UI/node_modules
 Semantic-UI/examples
 Semantic-UI/tasks
+!Semantic-UI/src
