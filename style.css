@@ -1,0 +1,46 @@
+/* Generales */
+body{
+	font-family: monospace;
+	padding-top: 120px;
+}
+
+/* Menu */
+.header {
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	background: white;
+	/*opacity: .8;*/
+	/*padding: 0 10px 10px;*/
+	/*padding-bottom: 10px;*/
+}
+.navs{
+	/*padding: 10px;*/
+	width: 100%;
+	text-align: center;
+}
+#home{
+	text-align: center;
+}
+/*#social{float: right;}*/
+
+/* Content */
+#A{
+	width:100%;
+	float: left;
+}
+.players{
+	width: 100%;
+	text-align: center;
+}
+#A pre{
+	margin: 0px auto;
+	width: 700px;
+}
+#linksDisco{}
+
+/* Content */
+.photo{
+	text-align: center;
+}

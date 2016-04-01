@@ -41,11 +41,11 @@ grabJson($url_albums,$url_event);
 
 
 sub grabJson{
-	
+
 	foreach my $item (@_){
 
-	    print "Obteniendo: ",$item,"\n";
-		
+		print "Obteniendo: ",$item,"\n";
+
 		# Create a Request
 		my $req = HTTP::Request->new(GET => $item);
 		$req->header(Accept => "text/json, */*;q=0.1");
@@ -55,15 +55,14 @@ sub grabJson{
 
 		# Check the outcome of the response
 		if ($res->is_success) {
-			
+
 			my $filename = '';
-			
+
 			foreach (split(/\n/,$item)){
 			    if(/(?<before>[\w]+)?\s*=\s*(?<after>[\w]+)?/){
-			        $filename = $+{after}.".json"; 
+			        $filename = $+{after}.".json";
 			    }
 			}
-				
 
 			#load to compare
 			open(my $fh, '<:encoding(UTF-8)', $filename)

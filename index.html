@@ -1,224 +1,65 @@
 <!doctype html>
 <html ng-app="App" >
 	<head>
+
 		<meta charset="utf-8">
 		<title>Antropofonica</title>
-		<style type="text/css">
-			body{
-				font-family: monospace;
-				padding-top: 120px;
-			}
-			.header {
-				top: 0;
-				left: 0;
-				position: fixed;
-				width: 100%;
-				background: white;
-				/*opacity: .8;*/
-				/*padding: 0 10px 10px;*/
-				/*padding-bottom: 10px;*/
-			}
-			.navs{
-			/*padding: 10px;*/
-			width: 100%;
-			text-align: center;
-			}
-
-			#home{text-align: center;}
-			/*#social{float: right;}*/
-
-
-
-
-
-			#A{
-				width:100%;
-				float: left;
-			}
-			.players{
-				width: 100%;
-				text-align: center;
-			}
-			#A pre{
-				margin: 0px auto;
-				width: 700px;
-			}
-			#linksDisco{}
-
-			.photo{
-				text-align: center;
-			}
-		</style>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js">
-		</script>
+		<link REL=StyleSheet href="style.css" type="text/css" media=screen>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
 		<script src="app.js"></script>
-		<script type="text/javascript">
-		//
 
-		</script>
 	</head>
+
 	<body>
+
+		<!-- HEADER -->
 		<div class="header">
 			<h1 id="home"><a href='/'>Antropof&oacute;nica</a></h1>
-
-
-
 			<div id="social" class="navs">
 				<p>
 					<a href="mailto:antropofonica@gmail.com">antropofonica@gmail.com</a> |
-					<a href="/antropofonica-presskit2015.zip">presskit</a> | <a target="_blank" href="http://antropofonica.bandcamp.com/">bandcamp</a> |
+					<a href="/antropofonica-presskit2015.zip">presskit</a> |
+					<a target="_blank" href="http://antropofonica.bandcamp.com/">bandcamp</a> |
 					<a target="_blank" href="https://www.facebook.com/antropofonica">facebook</a>
 				</p>
-
 			</div>
 		</div>
+
+		<!-- SECCION DISCO -->
 		<div id="A">
 			<div id="bcamp" class="players">
 				<div id="repro">
-					<iframe style="border: 0; width: 350px; height: 470px;" src="http://bandcamp.com/EmbeddedPlayer/album=497892785/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://antropofonica.bandcamp.com/album/a">A by Antropofónica</a></iframe>
+					<iframe style="border: 0; width: 350px; height: 470px;"
+						src="http://bandcamp.com/EmbeddedPlayer/album=497892785/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless>
+						<a href="http://antropofonica.bandcamp.com/album/a">A by Antropofónica</a>
+					</iframe>
 				</div>
 			</div>
-			<!-- <div id="ytube" class="players">
-				<div id="video">
-					<iframe width="640" height="480" src="https://www.youtube.com/embed/OBgedurne68?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
-				</div>
-			</div> -->
 			<div id="linksDisco" class="navs">
-			<p>
-				<strong>DISCO:</strong> <a href="http://www.antropofonica.com.ar/video">VER VIDEO</a> | Descargar audio: <a href="http://www.antropofonica.com.ar/disco/A-mp3.tar.gz" target="_blank">SD MP3</a> - <a href="http://www.antropofonica.com.ar/disco/A-wav.tar.gz" target="_blank">HD WAV</a>
+				<p>
+					<strong>DISCO:</strong> <a href="video.html">VER VIDEO</a> |
+					Descargar audio: <a href="http://www.antropofonica.com.ar/disco/A-mp3.tar.gz" target="_blank">SD MP3</a> -
+					<a href="http://www.antropofonica.com.ar/disco/A-wav.tar.gz" target="_blank">HD WAV</a>
 				</p>
-				<p>>>> <a href="mailto:antropofonica@gmail.com?subjet=Quiero comprar un codigo de descarga...">comprar c&oacute;digo</a> <<<</p>
-
-			</div>
-			<br><br>
-			<pre>
-       /\          /\          /\          /\          /\          /\          /\
-    /\//\\/\    /\//\\/\    /\//\\/\    /\//\\/\    /\//\\/\    /\//\\/\    /\//\\/\
- /\//\\\///\\/\//\\\///\\/\//\\\///\\/\//\\\///\\/\//\\\///\\/\//\\\///\\/\//\\\///\\/\
-//\\\//\/\\///\\\//\/\\///\\\//\/\\///\\\//\/\\///\\\//\/\\///\\\//\/\\///\\\//\/\\///\\
-\\//\/                                                                            \/\\//
- \/                                                                                  \/
- /\                                                                                  /\
-//\\   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA   //\\
-\\//   +AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+   \\//
- \/    .AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.    \/
- /\    .AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.    /\
-//\\   .AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.   //\\
-\\//    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA    \\//
- \/     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA     \/
- /\     .AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.     /\
-//\\    .AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.    //\\
-\\//    .AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.    \\//
- \/      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA      \/
- /\      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA      /\
-//\\     .AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.     //\\
-\\//      ~~~~~~~AAAAAAAAAAAAAAAAA.                  .AAAAAAAAAAAAAAAAA~~~~~~~      \\//
- \/               .AAAAAAAAAAAAAA.                    .AAAAAAAAAAAAAA.               \/
- /\                .AAAAAAAAAAAA.                      .AAAAAAAAAAAA.                /\
-//\\                AAAAAAAAAAA.                        .AAAAAAAAAAA                //\\
-\\//                AAAAAAAAAAA                          AAAAAAAAAAA                \\//
- \/                 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA                 \/
- /\                 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA                 /\
-//\\               .AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.               //\\
-\\//               AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA               \\//
- \/                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA                \/
- /\                AAAAAAAAAAAA                          AAAAAAAAAAAA                /\
-//\\              AAAAAAAAAAAAA.                        .AAAAAAAAAAAAA              //\\
-\\//            .AAAAAAAAAAAAAAA                        AAAAAAAAAAAAAAA.            \\//
- \/      .AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.      \/
- /\      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA      /\
-//\\     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA     //\\
-\\//    .AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.    \\//
- \/     .AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.     \/
- /\     .AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.     /\
-//\\    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA    //\\
-\\//    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA    \\//
- \/    .AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.    \/
- /\    .AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.    /\
-//\\   .AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.   //\\
-\\//   +AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+   \\//
- \/    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA    \/
- /\                                                                                  /\
-//\\/\                                                                            /\//\\
-\\///\\/\//\\\///\\/\//\\\///\\/\//\\\///\\/\//\\\///\\/\//\\\///\\/\//\\\///\\/\//\\\//
- \/\\///\\\//\/\\///\\\//\/\\///\\\//\/\\///\\\//\/\\///\\\//\/\\///\\\//\/\\///\\\//\/
-    \/\\//\/    \/\\//\/    \/\\//\/    \/\\//\/    \/\\//\/    \/\\//\/    \/\\//\/
-       \/          \/          \/          \/          \/          \/          \/
-       /\          /\          /\          /\          /\          /\          /\
-    /\//\\/\    /\//\\/\    /\//\\/\    /\//\\/\    /\//\\/\    /\//\\/\    /\//\\/\
- /\//\\\///\\/\//\\\///\\/\//\\\///\\/\//\\\///\\/\//\\\///\\/\//\\\///\\/\//\\\///\\/\
-//\\\//\/\\///\\\//\/\\///\\\//\/\\///\\\//\/\\///\\\//\/\\///\\\//\/\\///\\\//\/\\///\\
-\\//\/                                                                            \/\\//
- \/                                                                                  \/
- /\                                                                                  /\
-//\\       Antropofónica "A"                                                        //\\
-\\//                                                                                \\//
- \/                                                                                  \/
- /\        1 Intro - 2 Goliat - 3 Nibble - 4 Kuntur - 5 Oxum - 6 Fedayin             /\
-//\\                                                                                //\\
-\\//                                                                                \\//
- \/        Tobías Beltrán: batería; Marco Domini: guitarra; Lisandro                 \/
- /\        Fernández: bajo; Ezequiel Tedesco: teclados; Facundo Vacarezza:           /\
-//\\       trombón y coros; Santiago Zarba: saxo alto, s. barítono y coros.         //\\
-\\//                                                                                \\//
- \/        Juan Pola: guitarra; Sebastián Cicuta, Mariana Delpiano, Nicolás          \/
- /\        Jalfen, Nacho Ugarte: percusión; Javier Carbone: saxo barítono;           /\
-//\\       Leandro Lombardo: trompeta y coros; Camila Nebbia: saxo tenor;           //\\
-\\//       Matías Viscuso: trompeta; Natalia Curcho, Cecilia Bosso y Cecilia        \\//
- \/        Vega: voces.                                                              \/
- /\                                                                                  /\
-//\\                                                                                //\\
-\\//       La producción visual es de Gonzalo Zarba con asistencia de               \\//
- \/        Nicolas della Valentina y Julián García Barros.                           \/
- /\                                                                                  /\
-//\\       La fuente y el lettering lo hizo Mariela Monsalve.                       //\\
-\\//                                                                                \\//
- \/                                                                                  \/
- /\        Grabado en estudio ION por Pablo Acedo entre agosto del 2013 y            /\
-//\\       marzo de 2015. Mezclado en estudios ION en agosto de 2015 por            //\\
-\\//       Pablo Acedo y Antropofónica. Masterizado por Mariano López.              \\//
- \/                                                                                  \/
- /\        Sonido en vivo Alvaro Gainza y Joel Masera.                               /\
-//\\                                                                                //\\
-\\//                                                                                \\//
- \/                                                                                  \/
- /\        Desde el comienzo de esta grabación, a los colegas músicos, las           /\
-//\\       familias, Liebre Echada Cine, Dumbo, Alvarito, Billy, Pol, Julian,       //\\
-\\//       Muki, los pibes de Palito; a la magia del Nene y a la memoria de         \\//
- \/        Goliat, a los músicos que nos acompañan y acompañaron desde               \/
- /\        las primeras formaciones, y a toda la gente que consciente o              /\
-//\\       inconscientemente dejó su aporte en este proceso... Gracias!             //\\
-\\//                                                                                \\//
- \/                                                                                  \/
- /\                                                                                  /\
-//\\       2015                                                                     //\\
-\\//                                                                                \\//
- \/                                                                                  \/
- /\                                                                                  /\
-//\\/\                                                                            /\//\\
-\\///\\/\//\\\///\\/\//\\\///\\/\//\\\///\\/\//\\\///\\/\//\\\///\\/\//\\\///\\/\//\\\//
- \/\\///\\\//\/\\///\\\//\/\\///\\\//\/\\///\\\//\/\\///\\\//\/\\///\\\//\/\\///\\\//\/
-    \/\\//\/    \/\\//\/    \/\\//\/    \/\\//\/    \/\\//\/    \/\\//\/    \/\\//\/
-       \/          \/          \/          \/          \/          \/          \/
-			</pre>
-			<br><br><br>
-		 </div>
-		<div ng-controller="FlyersCtrl">
-
-				<div ng-repeat="photo in photos  | orderBy:'-created_time'" class="photo">
-					<pre>{{photo.name}}</pre>
-					<img ng-style="{maxHeight: iframeHeight + 'px'}"
-					id="fbImgId-{{photo.id}}"
-					src="{{photo.images}}">
-
-					<br><br>
-						<li id="{{comment.id}}" ng-repeat="comment in photo.comments.data">@{{comment.from.name}}: {{comment.message}}</li>
-					<p>***********************************************************</p>
-					<br><br><br>
-				</div>
-
-
+				<p>
+					<a href="mailto:antropofonica@gmail.com?subjet=Quiero comprar un codigo de descarga...">
+						<span class="flechas">>>></span>
+						pedí tu c&oacute;digo
+						<span class="flechas"><<<</span>
+					</a>
+			</p>
 		</div>
-	</body>
+	</div>
+
+	<!-- SECCION FLYER -->
+	<div ng-controller="FlyersCtrl">
+		<div ng-repeat="photo in photos  | orderBy:'-created_time'" class="photo">
+			<pre>{{photo.name}}</pre>
+			<img ng-style="{maxHeight: iframeHeight + 'px'}" id="fbImgId-{{photo.id}}" src="{{photo.images}}">
+			<li id="{{comment.id}}" ng-repeat="comment in photo.comments.data">@{{comment.from.name}}: {{comment.message}}</li>
+			<p>***********************************************************</p>
+		</div>
+	</div>
+
+</body>
 </html>
